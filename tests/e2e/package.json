@@ -1,0 +1,16 @@
+{
+  "name": "pw-auto-e2e",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "官方 @playwright/test 验收套件（脚手架阶段为占位 smoke）",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test:e2e": "playwright test -c playwright.config.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3"
+  }
+}

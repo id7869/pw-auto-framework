@@ -1,0 +1,26 @@
+{
+  "name": "@pw-auto/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "后端 HTTP API：路由、校验、编排、持久化（node:sqlite）",
+  "main": "./src/main.ts",
+  "scripts": {
+    "dev": "node --watch src/main.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.test.json",
+    "build": "tsc -p tsconfig.json",
+    "test:unit": "vitest run"
+  },
+  "dependencies": {
+    "@pw-auto/automation": "workspace:*",
+    "@pw-auto/contracts": "workspace:*",
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "@playwright/test": "1.65.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  }
+}

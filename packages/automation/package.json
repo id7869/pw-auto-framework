@@ -1,0 +1,28 @@
+{
+  "name": "@pw-auto/automation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "执行引擎与官方能力适配层：规格编译、官方 CLI 执行、JSON 报告解析、MCP/CLI/Agents 适配",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.test.json",
+    "build": "tsc -p tsconfig.json",
+    "test:unit": "vitest run"
+  },
+  "dependencies": {
+    "@pw-auto/contracts": "workspace:*",
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "@playwright/test": "1.65.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  }
+}

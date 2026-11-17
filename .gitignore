@@ -1,0 +1,50 @@
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# 运行时数据（后端与执行引擎写入）
+.data/
+agents/
+runs/
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# 测试与产物
+test-results/
+playwright-report/
+blob-report/
+artifacts/
+.perfetto-trace
+*.trace.zip
+
+# Playwright CLI / MCP / agents 目录
+.playwright/
+.playwright-cli/
+.claude/
+.codex/
+.opencode/
+.vscode/
+
+# 日志与临时文件
+*.log
+npm-debug.log*
+pnpm-debug.log*
+.tmp/
+tmp/
+dsh-*
+
+# 环境与密钥（严禁入库）
+.env
+.env.*
+auth.json
+storage-state.json
+
+# 编辑器与系统
+.DS_Store
+Thumbs.db
+.idea/

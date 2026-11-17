@@ -1,0 +1,24 @@
+{
+  "name": "pw-auto-framework",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "由官方 @playwright/test 承重的 Web 自动化测试平台：用例编辑、数据驱动、运行与回归、MCP/CLI/Agent 交接",
+  "packageManager": "pnpm@11.22.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "typecheck": "pnpm -r run typecheck",
+    "build": "pnpm -r run build",
+    "test:unit": "pnpm -r run test:unit",
+    "test:e2e": "playwright test -c tests/e2e/playwright.config.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  }
+}

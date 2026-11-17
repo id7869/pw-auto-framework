@@ -1,0 +1,27 @@
+{
+  "name": "@pw-auto/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "面向普通用户的中文 Web 前端（React + Vite）",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build": "vite build",
+    "test:unit": "vitest run"
+  },
+  "dependencies": {
+    "@pw-auto/contracts": "workspace:*",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "typescript": "5.9.3",
+    "vite": "8.3.7",
+    "vitest": "5.1.0"
+  }
+}
